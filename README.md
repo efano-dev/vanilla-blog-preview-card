@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://efano-dev.github.io/vanilla-blog-preview-card/)
+- Live Site URL: [Blog Preview Card](https://efano-dev.github.io/vanilla-blog-preview-card/)
 
 ## My process
 
