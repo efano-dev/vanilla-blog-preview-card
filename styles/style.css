@@ -1,0 +1,125 @@
+@font-face {
+    font-family: "Figtree";
+    src: url("../assets/fonts/Figtree-VariableFont_wght.ttf");
+}
+
+:root {
+    --color-yellow: hsl(47, 88%, 63%);
+    --color-gray-950: hsl(0, 0%, 7%);
+    --color-gray-500: hsl(0, 0%, 42%);
+    --color-white: hsl(0, 0%, 100%);
+    --flh: 1.5;
+    --fs-1: clamp(1.25rem, 1.1619718309859155rem + 0.3755868544600939vw, 1.5rem);
+    --fs-2: clamp(0.875rem, 0.8309859154929577rem + 0.18779342723004694vw, 1rem);
+    --fs-3: clamp(0.75rem, 0.7059859154929577rem + 0.18779342723004694vw, 0.875rem);
+    --fs-3-fixed: 0.875rem;
+    --fw-extra-bold: 800;
+    --fw-medium: 500;
+    --spacing-300: 1.5rem;
+    --spacing-150: 0.75rem;
+    --spacing-100: 8px;
+    --spacing-50: 0.25rem;
+    --spacing-50-fixed: 4px;
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    line-height: var(--flh);
+    font-family: "Figtree";
+    color: var(--color-gray-950);
+    background-color: var(--color-yellow);
+    height: 100dvh;
+    display: grid;
+    place-items: center;
+}
+
+h1, p {
+    margin: 0
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.card {
+    width: 20.4375rem;
+    background-color: var(--color-white);
+    box-shadow: var(--spacing-100) var(--spacing-100) var(--color-gray-950);
+    padding: var(--spacing-300);
+    border: 1px solid var(--color-gray-950);
+    border-radius: 20px;
+}
+
+.card-banner {
+    height: 12.5rem;
+    object-fit: cover;
+    margin-bottom: var(--spacing-300);
+    border-radius: 10px;
+}
+
+.card-details {
+    margin-bottom: var(--spacing-300);
+}
+
+.card-info {
+    font-size: var(--fs-3);
+    font-weight: var(--fw-medium);
+    margin-bottom: var(--spacing-150);
+}
+
+.badge {
+    display: inline-block;
+    font-weight: var(--fw-extra-bold);
+    background-color: var(--color-yellow);
+    padding: var(--spacing-50) var(--spacing-150);
+    border-radius: var(--spacing-50-fixed);
+}
+
+.card-heading {
+    font-size: var(--fs-1);
+    font-weight: var(--fw-extra-bold);
+    margin-bottom: var(--spacing-150);
+}
+
+.card-heading-link {
+    color: var(--color-gray-950);
+    text-decoration: none;
+}
+
+.card-heading-link:hover, .card-heading-link:focus {
+    color: var(--color-yellow);
+}
+
+.card-text {
+    font-size: var(--fs-2);
+    font-weight: var(--fw-medium);
+    color: var(--color-gray-500);
+}
+
+.card-hero {
+    display: flex;
+    align-items: center;
+    column-gap: var(--spacing-150);
+}
+
+.card-hero img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.card-hero p {
+    font-size: var(--fs-3-fixed);
+    font-weight: var(--fw-extra-bold);
+}
+
+@media screen and (min-width: 90em) {
+    .card {
+        width: 24rem;
+    }
+}
