@@ -30,6 +30,9 @@ body {
     margin: 0;
     line-height: var(--flh);
     font-family: "Figtree";
+}
+
+main {
     color: var(--color-gray-950);
     background-color: var(--color-yellow);
     height: 100dvh;
@@ -56,18 +59,18 @@ img {
     border-radius: 20px;
 }
 
-.card-banner {
+.card__banner {
     height: 12.5rem;
     object-fit: cover;
     margin-bottom: var(--spacing-300);
     border-radius: 10px;
 }
 
-.card-details {
+.card__details {
     margin-bottom: var(--spacing-300);
 }
 
-.card-info {
+.card__info {
     font-size: var(--fs-3);
     font-weight: var(--fw-medium);
     margin-bottom: var(--spacing-150);
@@ -81,39 +84,39 @@ img {
     border-radius: var(--spacing-50-fixed);
 }
 
-.card-heading {
+.card__heading {
     font-size: var(--fs-1);
     font-weight: var(--fw-extra-bold);
     margin-bottom: var(--spacing-150);
 }
 
-.card-heading-link {
+.card__heading__link {
     color: var(--color-gray-950);
     text-decoration: none;
 }
 
-.card-heading-link:hover, .card-heading-link:focus {
+.card__heading__link:hover, .card__heading__link:focus {
     color: var(--color-yellow);
 }
 
-.card-text {
+.card__text {
     font-size: var(--fs-2);
     font-weight: var(--fw-medium);
     color: var(--color-gray-500);
 }
 
-.card-hero {
+.card__hero {
     display: flex;
     align-items: center;
     column-gap: var(--spacing-150);
 }
 
-.card-hero img {
+.card__hero img {
     width: 2rem;
     height: 2rem;
 }
 
-.card-hero p {
+.card__hero p {
     font-size: var(--fs-3-fixed);
     font-weight: var(--fw-extra-bold);
 }
