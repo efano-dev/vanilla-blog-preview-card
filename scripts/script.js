@@ -1,5 +1,7 @@
 import { webPageURL } from "./global_variables.js";
 
-const cardHeadingLink = document.getElementById("cardHeadingLink");
+const anchorTags = document.getElementsByTagName("a");
 
-cardHeadingLink.href = webPageURL;
+[...anchorTags].map((anchorTag) => {
+    anchorTag.href = webPageURL;
+});
